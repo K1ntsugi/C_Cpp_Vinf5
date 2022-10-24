@@ -12,11 +12,11 @@ int main()
 	cin >> input;
 	result = palindrome(input);
 	cout << "Die umgekehrte Zahl lautet: ";
-	if(result == input)
+	if (result == input)
 	{
 		cout << "Die zahl ist ein Palindrom";
-	} 
-	else 
+	}
+	else
 	{
 		cout << "Die Zahl ist kein Palindrom";
 	}
@@ -24,10 +24,10 @@ int main()
 }
 
 static bool palindrome(int input)
-{	
+{
 	bool result;
 	int digit;
-	while(input > 0)
+	while (input > 0)
 	{
 		digit %= input;
 	}

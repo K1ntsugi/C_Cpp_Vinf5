@@ -3,8 +3,8 @@
 
 using namespace std;
 
-static void checkships(bool &shipmap[]);
-static void playerShoot(bool &shipmap[][]);
+static void checkships(bool shipmap[5][5], int ship_count);
+// static void playerShoot(bool **shipmap);
 
 int main()
 {
@@ -20,29 +20,25 @@ int main()
 
 	do
 	{
-
-		playerShoot(ships);
+		checkships(ships, ship_count);
+		// playerShoot(ships);
 
 	} while (ship_count > 0);
 
-	cout << "Herzilchen Gühstrumpf! Sie haben gewonnen!";
+	cout << "Herzlichen Glühstrumpf! Sie haben gewonnen!";
 	cout << "\nDas hat Sie Lebenszeit und " << tries << " Versuche gekostet.";
 
 	return 0;
 }
 
-static void checkships(bool &shipmap[], int &ship_count)
+static void checkships(bool shipmap[5][5], int ship_count)
 {
 	for (int i = 0; i < 5; i++)
 	{
 		for (int j = 0; j < 5; j++)
 		{
-			if (shipmap[i][j] == 1)
+			if (*(*(shipmap + i) + j))
 				ship_count++;
 		}
 	}
-}
-
-static void playerShoot(bool &map)
-{
 }
