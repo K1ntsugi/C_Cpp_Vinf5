@@ -20,9 +20,9 @@ int main()
 		cout << "\nZahl 2 eingeben: ";
 		cin >> y;
 		cout << "\nErgebnis: " << compute(c, x, y);
-		cout << "Nochmal? <j/n>";
+		cout << "\nNochmal? <j/n>";
 		cin >> run;
-	} while (run != 'n' || run != 'N');
+	} while (run == 'j' || run == 'J');
 	return 0;
 }
 
