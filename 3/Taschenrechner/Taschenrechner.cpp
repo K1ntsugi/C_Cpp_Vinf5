@@ -6,11 +6,14 @@ static double compute(char op, int a, int b);
 
 int main()
 {
-	char run = 'j', char c, int x, int y;
-	cout << "####################################" << "\nTaschenrechner";
-	
-	do {
-		cout << "\nOperand eingeben: "
+	char run = 'j', c;
+	int x, y;
+	cout << "####################################"
+		 << "\nTaschenrechner";
+
+	do
+	{
+		cout << "\nOperand eingeben: ";
 		cin >> c;
 		cout << "\nZahl 1 eingeben: ";
 		cin >> x;
@@ -26,26 +29,26 @@ int main()
 static double compute(char op, int a, int b)
 {
 	int result;
-	switch(op)
+	switch (op)
 	{
-		case '+':
-			result = a + b;
-			break;
-		case '-':
-			result = a - b;
-			break;
-		case '*':
-			result = a * b;
-			break;
-		case '/':
-			result = a / b;
-			break;
-		case '%':
-			result = a % b;
-			break;
-		default:
-			result = a + b;
-			break;
+	case '+':
+		result = a + b;
+		break;
+	case '-':
+		result = a - b;
+		break;
+	case '*':
+		result = a * b;
+		break;
+	case '/':
+		result = a / b;
+		break;
+	case '%':
+		result = a % b;
+		break;
+	default:
+		result = a + b;
+		break;
 	}
 	return result;
 }
