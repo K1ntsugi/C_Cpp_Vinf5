@@ -14,7 +14,7 @@ using std::vector;
 void newGrade(vector<string> &vectofNames, vector<float> &vectofDegrees);
 void deleteLastGrade(vector<string> &vectofNames, vector<float> &vectofDegrees);
 void showGrades(vector<string> &vectofNames, vector<float> &vectofDegrees);
-void clearStuff(bool wait)
+inline void clearStuff(bool wait)
 {
     if (wait)
     {

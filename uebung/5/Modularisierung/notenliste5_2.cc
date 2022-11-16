@@ -18,6 +18,7 @@ int main()
         cInput = 0;
         cout << endl
              << endl;
+
         cout << "\'n\' = Namen und Note eingeben" << endl;
         cout << "\'l\' = letzten Eintrag loeschen" << endl;
         cout << "\'a\' = Alle Anzeigen" << endl;
@@ -42,4 +43,5 @@ int main()
             continue;
     } while (cInput != '0');
     cout << "\n\nProgrammende!\n";
+    return 1;
 }
