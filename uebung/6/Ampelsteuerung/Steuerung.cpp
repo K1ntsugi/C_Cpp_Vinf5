@@ -1,6 +1,4 @@
 #include "Ampel.hpp"
-#include <iostream>
-#include <iterator>
 
 #define clear_screen system("clear");
 
