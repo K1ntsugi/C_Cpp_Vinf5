@@ -15,7 +15,8 @@ int main()
 	h_night = 12;
 	phase_Ampel = 0;
 	clear_screen;
-
+	
+	//Todo: Q->Ampel beenden, N->Bilken (gelb)
     do
     {
 		if(tag)
