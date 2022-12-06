@@ -48,6 +48,8 @@ int main()
 	president_New Biden, Obama = {"Barack Obama",
 		seitensprungVektor , "Demokrat"};
 
+	cout << Obama.name << endl;
+
 
 	return 0;
 }
