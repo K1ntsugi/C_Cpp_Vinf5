@@ -18,7 +18,6 @@ class CAuto
 		{
 			i_Insassen += i_Mitfahrer;
 		}
-
 		int getInsassen()
 		{
 			return i_Insassen;
