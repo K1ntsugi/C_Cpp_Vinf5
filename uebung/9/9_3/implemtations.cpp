@@ -1,4 +1,4 @@
-#include "mensch.hpp"
+#include "definitions.hpp"
 #include <sstream>
 
 Mensch::Mensch()
@@ -17,7 +17,7 @@ Mensch::Mensch(string vorname, string nachname, int alter)
 
 Mensch::~Mensch()
 {
-    cout << "Destruktor der Klasse Mensch.\n";
+    cout << "\nDestruktor der Klasse Mensch.\n";
 }
 
 string Mensch::getVorname()
@@ -53,6 +53,8 @@ void Mensch::setAlter(int alter)
 string Mensch::toString()
 {
     stringstream ss;
-    ss << strNachname << " " << strVorname << " ist " << iAlter << " Jahre alt\n";
+    ss << getVorname() << " "
+       << getNachname() << " ist "
+       << getAlter() << " Jahre alt";
     return ss.str();
 }
