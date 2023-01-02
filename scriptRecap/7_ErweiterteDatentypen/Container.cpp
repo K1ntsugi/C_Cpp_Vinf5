@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <array>
 #include <list>
+#include <vector>
 
 using namespace std;
 
