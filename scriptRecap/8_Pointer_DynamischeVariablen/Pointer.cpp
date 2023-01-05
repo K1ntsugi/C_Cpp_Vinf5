@@ -13,6 +13,14 @@ int main() {
     cout << "\Speicheradresse von var: " << ptr << endl;
     cout << "Speicheradresse von ptr: " << &ptr << endl;
     cout << "Wert von var, auf die der ptr zeigt: " << *ptr << endl;
+	
+	// Unterschied Zeigervariable vs. Referenzvariable
+	// Zeigervariable = Variable deren Speicheradresse im Pointer gespeichert wird
+	// Referenzvariable = Permanente Referenz als Alias zu einer anderen Variable
+	
+
+
+
 
     return 0;
 }
